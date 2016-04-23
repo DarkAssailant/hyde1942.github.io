@@ -1,0 +1,73 @@
+// bower:scss
+// endbower
+
+
+
+//Typography
+
+@font-face {
+    font-family: "Geogrotesque Semibold";
+    src: url("/fonts/a3e2c11b-c08f-452d-98b2-82cf697c9968.eot?#iefix");
+    src: url("/fonts/a3e2c11b-c08f-452d-98b2-82cf697c9968.eot?#iefix") format("eot"),
+         url("/fonts/9548811b-a57e-4d9f-abad-aeb27640450d.woff") format("woff"),
+         url("/fonts/1a8cf960-d55c-4ac5-af4e-79ca12bca166.ttf") format("truetype"),
+         url("/fonts/0f568404-e588-4700-ae22-7b62fbcc7327.svg#0f568404-e588-4700-ae22-7b62fbcc7327") format("svg")
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+
+
+
+
+
+
+//MAIN Menu CSS...
+
+
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+  width: 100%;
+  padding: 1em;
+  background-color: #D2D2D2;
+  div {
+    float: left;
+    &.logo-container {
+      width:15%;
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: auto;
+      }
+    }
+    &.nav-container {
+      width: 85%;
+    }
+  }
+  ul {
+    margin: 0 auto;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      width: 12%;
+      margin-right: 0.2%;
+      a {
+        background-color: #333;
+        text-align: center;
+        font-family: 'Geogrotesque Semibold';
+        color: #FFF;
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+      }
+    }
+  }
+}
+
