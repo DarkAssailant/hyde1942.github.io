@@ -1,4 +1,5 @@
 // bower:scss
+@import "bower_components/fullpage.js/jquery.fullPage.scss";
 // endbower
 
 
@@ -17,17 +18,29 @@
   position: relative;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
 }
 
 
 
-
-
-
+@font-face {
+    font-family: "Geogrotesque Regular";
+    src: url("/fonts/77c5adea-c45f-4bd6-bc83-c171aa401eac.eot?#iefix");
+    src: url("/fonts/77c5adea-c45f-4bd6-bc83-c171aa401eac.eot?#iefix") format("eot"),
+         url("/fonts/ae7eda9b-5729-4029-8ea8-1f4b2feb6595.woff") format("woff"),
+         url("/fonts/f5e7d965-e646-4ea9-8b21-bf17e3e5de42.ttf") format("truetype"),
+         url("/fonts/ae5b8a9c-af85-4ddf-a0a6-602405583707.svg#ae5b8a9c-af85-4ddf-a0a6-602405583707") format("svg")
+}
 
 //MAIN Menu CSS...
 
+
+h1,h2 {
+  font-family: "Geogrotesque Semibold", sans-serif;
+}
+
+p {
+  font-family: 'Geogrotesque Regular', sans-serif;
+}
 
 header {
   position:fixed;
@@ -37,6 +50,8 @@ header {
   width: 100%;
   padding: 1em;
   background-color: #D2D2D2;
+  max-height: 60px;
+  border-bottom: 4px solid #000;
   div {
     float: left;
     &.logo-container {
@@ -68,6 +83,24 @@ header {
         padding: 1em;
       }
     }
+  }
+}
+
+
+//Home Section
+
+.section {
+  padding: 0 4em;
+}
+.fp-tableCell {
+  position: relative;
+}
+
+.home {
+  background: url('../images/backgrounds/intro_background.jpg') 0 85px no-repeat;
+  background-size: cover;
+  h1,p{
+    position: absolute;
   }
 }
 
