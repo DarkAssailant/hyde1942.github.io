@@ -4,7 +4,10 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "modernizr": "~2.8.3",
-    "fullpage.js": "^2.7.9"
+    "fullpage.js": "^2.7.9",
+    "underscore": "~1.8.3",
+    "moment-js": "~0.3.0",
+    "clndr": "~1.4.1"
   },
   "devDependencies": {
     "chai": "~3.5.0",

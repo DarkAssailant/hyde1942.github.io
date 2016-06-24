@@ -56,7 +56,13 @@ module.exports = function (grunt) {
         tasks: ['newer:copy:styles', 'postcss']
       }
     },
-
+    sprite:{
+      all: {
+        src: '<%= config.app %>/images/logos/*.png',
+        dest: '<%= config.app %>/images/spritesheet.png',
+        destCss: '<%= config.app %>/styles/_sprites.scss'
+      }
+    },
     browserSync: {
       options: {
         notify: false,
@@ -389,7 +395,8 @@ module.exports = function (grunt) {
       'concurrent:server',
       'postcss',
       'browserSync:livereload',
-      'watch'
+      'watch',
+      'sprite'
     ]);
   });
 

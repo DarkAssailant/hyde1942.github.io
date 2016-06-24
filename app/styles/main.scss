@@ -1,8 +1,7 @@
 // bower:scss
-@import "bower_components/fullpage.js/jquery.fullPage.scss";
 // endbower
 
-
+@import 'calendar';
 
 //Typography
 
@@ -40,6 +39,7 @@ h1,h2 {
 
 p {
   font-family: 'Geogrotesque Regular', sans-serif;
+  line-height: 24px;
 }
 
 header {
@@ -100,7 +100,27 @@ header {
   background: url('../images/backgrounds/intro_background.jpg') 0 85px no-repeat;
   background-size: cover;
   h1,p{
-    position: absolute;
+    color:#e1e1e1;
   }
 }
 
+.section {
+  .row {
+    float: left;
+    &:first-of-type {
+      width: 58%;
+      padding-right:2%;
+    }
+    &:last-of-type {
+      width: 40%;
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+
+      }
+    }
+  }
+}
+.calendar {
+  background-color: whitesmoke;
+}
